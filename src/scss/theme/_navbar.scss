@@ -168,8 +168,11 @@
           }
 
           .nav-link {
-            padding-right: .5rem;
-            padding-left: .5rem;
+            // 
+            // padding-right: .5rem;
+            // padding-left: .5rem;
+            padding-right: 1rem;
+            padding-left: 1rem;
           }
         }
 
@@ -260,6 +263,11 @@
 
 // White links against a dark background
 .navbar-dark {
+
+  // 
+  border-bottom: 1px solid theme-color('primary');
+  box-shadow: 0 .3rem 5rem rgba(0,0,0,.15);
+  
   .navbar-brand {
     color: $navbar-dark-active-color;
 
@@ -271,6 +279,10 @@
   .navbar-nav {
     .nav-link {
       color: $navbar-dark-color;
+      // 
+      font-size: $font-size-sm;
+      letter-spacing: .1rem;
+
 
       @include hover-focus {
         color: $navbar-dark-hover-color;

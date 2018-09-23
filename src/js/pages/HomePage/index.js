@@ -6,8 +6,15 @@ import image from './assets/avatar.jpg';
 function HomePage(props) {
     return(
         <div>
-            Homepage wuhw
-            <Link to={"/login"}>Login</Link>
+            <div className="container">
+                <div className="row">
+                    <div className="col">
+                        <Link to={'/user-profile'}>Link</Link>
+                        <img className="img-fluid" data-aos="fade" src="https://media.playstation.com/is/image/SCEA/legend-of-korra-listing-thumb-01-ps4-ps3-us-18jun14?$Icon$" alt="" />
+                    </div>
+                </div>
+            </div>
+            {/* <Link to={"/login"}>Login</Link>
             <div className="container">
                 <div className="row">
                     <div className="col">
@@ -18,7 +25,7 @@ function HomePage(props) {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }
