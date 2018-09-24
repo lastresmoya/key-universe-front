@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import GameListItem from '../../components/GameListItem';
+import GameCard from '../../components/GameCard';
 
 function HomePage(props) {
     return(
@@ -21,9 +21,14 @@ function HomePage(props) {
                     </div>
                 </div>
                 <div className="row">
-                    <GameListItem />
-                    <GameListItem />
-                    <GameListItem />
+                    <GameCard />
+                    <GameCard />
+                    <GameCard />
+                    <GameCard />
+                    <GameCard />
+                    <GameCard />
+                    <GameCard />
+                    <GameCard />
                 </div>
                 
             </div>
