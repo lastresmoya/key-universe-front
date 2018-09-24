@@ -61,10 +61,11 @@ function HomePage(props) {
                         </div>
                     </div>
                 </div>
-                <AboutUs/>
-                <CallToAction/>
+                
 
             </div>
+            <AboutUs />
+            <CallToAction />
             <Footer/>
             {/* <Link to={"/login"}>Login</Link>
             <div className="container">

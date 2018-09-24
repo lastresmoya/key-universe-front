@@ -18,7 +18,6 @@ class GameCard extends Component {
         fadeDelay: Math.ceil((Math.floor(Math.random() * 400) + 0)/100)*100 ,
     }
     render () {
-        console.log(this.state.fadeDelay)
         return (
             <div className="col-sm-3 col-6">
                 <Link to={'/product'} className="game-card">
