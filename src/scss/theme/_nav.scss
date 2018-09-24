@@ -39,6 +39,10 @@
   .nav-link {
     border: $nav-tabs-border-width solid transparent;
     @include border-top-radius($nav-tabs-border-radius);
+    // 
+    color: rgba($nav-tabs-link-active-color,.4);
+    letter-spacing: .2rem;
+    font-size: $font-size-sm;
 
     @include hover-focus {
       border-color: $nav-tabs-link-hover-border-color;

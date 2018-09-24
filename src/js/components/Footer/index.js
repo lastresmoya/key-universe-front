@@ -11,7 +11,7 @@ import {
 
 function Footer (props) {
     return(
-        <footer className="bg-secondary pt-5">
+        <footer className="bg-secondary pt-5 mt-5">
             <div className="container">
                 <div className="row">
                     <div className="col">

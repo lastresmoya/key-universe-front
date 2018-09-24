@@ -45,7 +45,7 @@ function HomePage(props) {
                         <GamesList />
                     </div>
                     <div className="col-sm-4">
-                        <div className="card bg-secondary mb-4 text-center">
+                        <div className="card bg-secondary mb-4 text-center mt-sm-5">
                             <div className="card-body px-4 py-5">
                                 <img src={iconGuaranteed} alt="" data-aos="fade-down"/>
                                 <h5 className="mb-2 mt-3">Guarantee</h5>
