@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import image from './assets/avatar.jpg';
+import GameListItem from '../../components/GameListItem';
 
 function HomePage(props) {
     return(
@@ -9,10 +9,23 @@ function HomePage(props) {
             <div className="container">
                 <div className="row">
                     <div className="col">
-                        <Link to={'/user-profile'}>Link</Link>
-                        <img className="img-fluid" data-aos="fade" src="https://media.playstation.com/is/image/SCEA/legend-of-korra-listing-thumb-01-ps4-ps3-us-18jun14?$Icon$" alt="" />
+
+                        {/* <Link to={'/user-profile'}>Link</Link> */}
+                        {/* <img className="img-fluid" data-aos="fade" src="https://media.playstation.com/is/image/SCEA/legend-of-korra-listing-thumb-01-ps4-ps3-us-18jun14?$Icon$" alt="" /> */}
                     </div>
                 </div>
+                <div className="row mt-4 mb-3">
+                    <div className="col d-flex align-items-baseline justify-content-between">
+                        <h3>Featured</h3>
+                        <a href="" className="btn-link"><small>VIEW ALL</small></a>
+                    </div>
+                </div>
+                <div className="row">
+                    <GameListItem />
+                    <GameListItem />
+                    <GameListItem />
+                </div>
+                
             </div>
             {/* <Link to={"/login"}>Login</Link>
             <div className="container">
