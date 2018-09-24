@@ -50,8 +50,8 @@ class GameCard extends Component {
                         </div>
                     </div>
                     <div className="game-card-footer">
-                        <h5>Dark Souls III</h5>
-                        <small className="font-style-italic">Action role-playing</small>
+                        <h5 className="m-0">Dark Souls III</h5>
+                        <small className="font-weight-light"><i>Action role-playing</i></small>
                     </div>
                 </Link>
 
