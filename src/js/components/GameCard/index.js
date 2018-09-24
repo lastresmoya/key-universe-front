@@ -15,13 +15,14 @@ import {
 
 class GameCard extends Component {
     state = {
-        profileView: 'personal'
+        fadeDelay: Math.ceil((Math.floor(Math.random() * 400) + 0)/100)*100 ,
     }
     render () {
+        console.log(this.state.fadeDelay)
         return (
             <div className="col-sm-3 col-6">
                 <Link to={'/product'} className="game-card">
-                    <div className="game-card-top" data-aos="fade-up">
+                    <div className="game-card-top" data-aos="fade" data-aos-delay={this.state.fadeDelay}>
                         <div className="game-card-img">
                             <div className="upper d-flex align-items-center justify-content-end">
                                 <span className="badge badge-pill badge-light mr-2"><FaIcon icon={faApple} /></span>
