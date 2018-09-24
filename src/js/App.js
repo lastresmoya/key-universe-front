@@ -17,6 +17,7 @@ import CartPage from "./pages/CartPage";
 import NewOffer from "./pages/NewOffer";
 
 import MainNav from './components/MainNav';
+import Footer from './components/Footer';
 
 class AppContainer extends Component {
     componentDidMount() {
@@ -40,7 +41,7 @@ class AppContainer extends Component {
                     <Route path='/product' component={ProductPage} />
                     <Route path='/cart' component={CartPage} />
                     <Route path='/my-profile/offers/new' component={NewOffer} />
-                    
+                    <Footer/>
                     {/* <Route path="/clinician" render={() => <Dashboard {...{ currentDash: 'clinician' }} />} />
                     <Route path="/doctor" render={() => <Dashboard {...{ currentDash: 'doctor' }} />} /> */}
 

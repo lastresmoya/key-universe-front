@@ -11,6 +11,8 @@
   background-color: $progress-bg;
   @include border-radius($progress-border-radius);
   @include box-shadow($progress-box-shadow);
+  box-shadow: 0 0 0 .3rem theme-color('secondary');
+  margin-bottom: .3rem;
 }
 
 .progress-bar {

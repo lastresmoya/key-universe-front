@@ -8,7 +8,7 @@ function AboutUs (props) {
                 <div className="row">
                     <div className="col">
                         <div className="d-flex align-items-center">
-                            <div className="card-special card-left" data-aos="fade-left">
+                            <div className="card-special card-left" data-aos="fade-left" data-aos-delay="400">
                                 <div className="card-special-body">
                                     <img src={logoKey} alt="" />
                                 </div>

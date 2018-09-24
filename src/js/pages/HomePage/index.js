@@ -6,7 +6,6 @@ import GameCard from '../../components/GameCard';
 import GamesList from '../../components/GamesList';
 import AboutUs from '../../components/AboutUs';
 import CallToAction from '../../components/CallToAction';
-import Footer from '../../components/Footer';
 import iconGuaranteed from './assets/icon-guaranteed.png';
 import iconSecurity from './assets/icon-security.png';
 
@@ -61,7 +60,6 @@ function HomePage(props) {
             </div>
             <AboutUs />
             <CallToAction />
-            <Footer/>
             {/* <Link to={"/login"}>Login</Link>
             <div className="container">
                 <div className="row">
