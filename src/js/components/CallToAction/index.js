@@ -17,7 +17,7 @@ function CallToAction (props) {
                                     </div>
                                 </div>
                             </div>
-                            <div className="card-special card-right" data-aos="fade-right" data-aos-delay="400">
+                            <div className="card-special card-right" data-aos="fade-right">
                                 <div className="card-special-body">
                                     <img src={iconShake} alt="" />
                                 </div>

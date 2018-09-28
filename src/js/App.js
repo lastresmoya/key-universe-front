@@ -22,7 +22,7 @@ import Footer from './components/Footer';
 class AppContainer extends Component {
     componentDidMount() {
         AOS.init({
-            offset: 200,
+            offset: 50,
             duration: 600,
             easing: 'ease-in-out-sine',
             delay: 100,

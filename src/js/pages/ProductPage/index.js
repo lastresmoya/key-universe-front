@@ -11,6 +11,9 @@ import thumby3 from './assets/thumb-sm-3.png';
 import thumby4 from './assets/thumb-sm-4.png';
 import thumby5 from './assets/thumb-sm-5.png';
 
+import UserAvatar from '../../components/UserAvatar';
+import Badges from '../../components/Badges';
+
 function ProductPage(props) {
     return (
         <div>
@@ -33,12 +36,15 @@ function ProductPage(props) {
                     </div>
                     <div className="col-sm-7">
                         <div className="row">
-                            <div className="col-sm-7">
+                            <div className="col-sm-8">
                                 <h1>The Witcher 3: Wild Hunt</h1>
                                 <small className="font-weight-light"><i>Windows International Release</i></small>
+                                <UserAvatar/>
+                                <Badges size="sm"/>
                             </div>
-                            <div className="col-sm-5">
-                                <p className="h1">€10</p>
+                            <div className="col-sm-4">
+                                <p className="h1">€10.70</p>
+                                <small>Includes donation for developers studio <strong>€3.00</strong></small>
                             </div>
                         </div>
                     </div>

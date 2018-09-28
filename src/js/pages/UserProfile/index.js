@@ -3,16 +3,13 @@ import { Link } from 'react-router-dom';
 
 import FaIcon from '@fortawesome/react-fontawesome';
 import { faAngleLeft } from '@fortawesome/fontawesome-free-solid';
-
 import avatar from './assets/avatar-lg.png';
-import iconRespect from './assets/icon-respect.png';
-import iconTrust from './assets/icon-trust.png';
-import iconVerified from './assets/icon-verified.png';
 import {
     faGem
 } from '@fortawesome/fontawesome-free-solid';
 
 import GameCard from '../../components/GameCard';
+import Badges from '../../components/Badges';
 
 function UserProfile (props){
     return(
@@ -50,19 +47,15 @@ function UserProfile (props){
                                                 <span><FaIcon icon={faGem} /><FaIcon icon={faGem} /><FaIcon icon={faGem} /></span>
                                                 User level
                                             </div>
-                                            <div data-aos="fade-up" data-aos-delay="400" className="d-flex flex-column"><h5 className="m-0 font-weight-normal">11</h5>Transactions</div>
-                                            <div data-aos="fade-up" data-aos-delay="600" className="d-flex flex-column"><h5 className="m-0 font-weight-normal">43</h5>Purchases</div>
-                                            <div data-aos="fade-up" data-aos-delay="800" className="d-flex flex-column"><h5 className="m-0 font-weight-normal">+11</h5>Rating</div>
+                                            <div data-aos="fade-up"  className="d-flex flex-column"><h5 className="m-0 font-weight-normal">11</h5>Transactions</div>
+                                            <div data-aos="fade-up" className="d-flex flex-column"><h5 className="m-0 font-weight-normal">43</h5>Purchases</div>
+                                            <div data-aos="fade-up"  className="d-flex flex-column"><h5 className="m-0 font-weight-normal">+11</h5>Rating</div>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="pr-5 mr-5 col-auto">
                                     <h5 className="font-spacing font-weight-light">BADGES</h5>
-                                    <ul className="list-unstyled">
-                                        <li className="d-flex align-items-center py-1"><img className="mr-3" src={iconRespect} alt=""/>Respected</li>
-                                        <li className="d-flex align-items-center py-1"><img className="mr-3" src={iconTrust} alt=""/>Trusted</li>
-                                        <li className="d-flex align-items-center py-1"><img className="mr-3" src={iconVerified} alt=""/>Verified</li>
-                                    </ul>
+                                    <Badges size="md"/>
                                 </div>
                             </div>
                         </div>

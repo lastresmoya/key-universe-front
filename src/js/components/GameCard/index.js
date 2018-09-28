@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import UserAvatar from '../UserAvatar';
 import thumb from './assets/game-thumbnail.png';
-import avatar from './assets/avatar.png';
 import iconGivingGame from './assets/icon-giving-game.png';
 import FaIcon from '@fortawesome/react-fontawesome';
 import { 
@@ -9,9 +9,6 @@ import {
     faWindows,
     faLinux
 } from '@fortawesome/fontawesome-free-brands';
-import {
-    faGem
-} from '@fortawesome/fontawesome-free-solid';
 
 class GameCard extends Component {
     state = {
@@ -37,17 +34,7 @@ class GameCard extends Component {
                             <img src={thumb} alt="" />
                         </div>
                     </div>
-                    <div className="game-card-body d-flex justify-content-start align-items-center">
-                        <img src={avatar} alt="" className="mr-2" />
-                        <div className="d-flex flex-column">
-                            <small>CAPTAIN_PEROXIDE</small>
-                            <small className="text-info">
-                                <FaIcon icon={faGem} className="mr-1" />
-                                <FaIcon icon={faGem} className="mr-1" />
-                                <FaIcon icon={faGem} />
-                            </small>
-                        </div>
-                    </div>
+                    <UserAvatar/>
                     <div className="game-card-footer">
                         <h5 className="m-0">Dark Souls III</h5>
                         <small className="font-weight-light"><i>Action role-playing</i></small>
