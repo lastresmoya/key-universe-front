@@ -84,3 +84,16 @@ body {
 .ov-h {
     overflow: hidden;
 }
+
+.btn {
+    &.btn-gradient {
+        background: transparent;
+        color: $white;
+        @include gradient-x(theme-color('primary'),theme-color('info')); 
+        border: 0;
+        @extend .py-2;
+        &:hover {
+            box-shadow: 0 0 1rem rgba(theme-color('primary'),.5);
+        }
+    }
+}

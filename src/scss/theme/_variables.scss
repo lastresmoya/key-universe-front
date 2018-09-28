@@ -242,7 +242,8 @@ $font-family-base:            $font-family-sans-serif !default;
 // stylelint-enable value-keyword-case
 
 
-$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+// $font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$font-size-base:              .95rem !default; // Assumes the browser default, typically `16px`
 $font-size-lg:                ($font-size-base * 1.25) !default;
 // $font-size-sm:                ($font-size-base * .875) !default;
 $font-size-sm:                ($font-size-base * .8) !default;
@@ -251,7 +252,9 @@ $font-weight-light:           300 !default;
 $font-weight-normal:          400 !default;
 $font-weight-bold:            700 !default;
 
-$font-weight-base:            $font-weight-normal !default;
+// $font-weight-base:            $font-weight-normal !default;
+$font-weight-base:            $font-weight-light !default;
+// $line-height-base:            1.5 !default;
 $line-height-base:            1.5 !default;
 
 $h1-font-size:                $font-size-base * 2.5 !default;
@@ -280,8 +283,10 @@ $display3-weight:             300 !default;
 $display4-weight:             300 !default;
 $display-line-height:         $headings-line-height !default;
 
-$lead-font-size:              ($font-size-base * 1.25) !default;
-$lead-font-weight:            300 !default;
+// $lead-font-size:              ($font-size-base * 1.25) !default;
+$lead-font-size:              ($font-size-base * 1.30) !default;
+// $lead-font-weight:            300 !default;
+$lead-font-weight:            $font-weight-bold !default;
 
 $small-font-size:             80% !default;
 
@@ -317,10 +322,12 @@ $table-cell-padding-sm:       .3rem !default;
 
 $table-bg:                    transparent !default;
 $table-accent-bg:             rgba($black, .05) !default;
-$table-hover-bg:              rgba($black, .075) !default;
+// $table-hover-bg:              rgba($black, .075) !default;
+$table-hover-bg:              rgba(theme-color('info'),.4) !default;
 $table-active-bg:             $table-hover-bg !default;
 
-$table-border-width:          $border-width !default;
+// $table-border-width:          $border-width !default;
+$table-border-width:          0 !default;
 $table-border-color:          $gray-300 !default;
 
 $table-head-bg:               $gray-200 !default;
@@ -647,22 +654,33 @@ $pagination-padding-y-lg:           .75rem !default;
 $pagination-padding-x-lg:           1.5rem !default;
 $pagination-line-height:            1.25 !default;
 
-$pagination-color:                  $link-color !default;
-$pagination-bg:                     $white !default;
-$pagination-border-width:           $border-width !default;
-$pagination-border-color:           $gray-300 !default;
+// $pagination-color:                  $link-color !default;
+$pagination-color:                  $white !default;
+// $pagination-bg:                     $white !default;
+$pagination-bg:                     transparent !default;
+// $pagination-border-width:           $border-width !default;
+$pagination-border-width:           0 !default;
+// $pagination-border-color:           $gray-300 !default;
+$pagination-border-color:           transparent !default;
 
 $pagination-hover-color:            $link-hover-color !default;
-$pagination-hover-bg:               $gray-200 !default;
-$pagination-hover-border-color:     $gray-300 !default;
+// $pagination-hover-bg:               $gray-200 !default;
+$pagination-hover-bg:               rgba(0,0,0,.2) !default;
+// $pagination-hover-border-color:     $gray-300 !default;
+$pagination-hover-border-color:     transparent !default;
 
-$pagination-active-color:           $white !default;
-$pagination-active-bg:              theme-color("primary") !default;
-$pagination-active-border-color:    theme-color("primary") !default;
+// $pagination-active-color:           $white !default;
+$pagination-active-color:           $link-color !default;
+// $pagination-active-bg:              theme-color("primary") !default;
+$pagination-active-bg:              transparent !default;
+// $pagination-active-border-color:    theme-color("primary") !default;
+$pagination-active-border-color:    transparent !default;
 
-$pagination-disabled-color:         $gray-600 !default;
-$pagination-disabled-bg:            $white !default;
-$pagination-disabled-border-color:  $gray-300 !default;
+$pagination-disabled-color:         $gray-700 !default;
+// $pagination-disabled-bg:            $white !default;
+$pagination-disabled-bg:            transparent !default;
+// $pagination-disabled-border-color:  $gray-300 !default;
+$pagination-disabled-border-color:  transparent !default;
 
 
 // Jumbotron
