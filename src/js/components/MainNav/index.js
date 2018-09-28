@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from './assets/logo-keyuniverse.png';
+import { Link } from 'react-router-dom';
 import FaIcon from '@fortawesome/react-fontawesome';
 import { 
     faShoppingCart,
@@ -36,10 +37,10 @@ function MainNav (props) {
                     <a href="" className="nav-link text-primary">SIGN IN</a>
                 </li>
                 <li className="nav-item">
-                    <a href="" className="nav-link">
+                    <Link to={'/checkout'} className="nav-link">
                         <span className="h6"><FaIcon icon={faShoppingCart} /></span>
                         <span className="badge badge-info">2</span>
-                    </a>
+                    </Link>
                 </li>
             </div>
                 {/* <form className="form-inline my-2 my-lg-0">

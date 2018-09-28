@@ -42,7 +42,7 @@ function SellerList(props) {
                         </a>
                     </li>
                     <li className="page-item active">
-                        <a className="page-link" href="#" tabindex="-1">1</a>
+                        <a className="page-link" href="#" tabIndex="-1">1</a>
                     </li>
                     <li className="page-item"><a className="page-link" href="#">2</a></li>
                     <li className="page-item">

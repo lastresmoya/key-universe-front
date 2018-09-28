@@ -4,7 +4,6 @@ import iconTrust from './assets/icon-trust.png';
 import iconVerified from './assets/icon-verified.png';
 
 function Badges (props) {
-    console.log(props)
     return(
         <div>
             {props.size === "md" && 
@@ -15,7 +14,7 @@ function Badges (props) {
                 </ul>
             }
             {props.size === "sm" &&
-                <ul className="list-inline">
+                <ul className="list-inline m-0">
                     <li className="list-inline-item"><img src={iconRespect} alt="" /></li>
                     <li className="list-inline-item"><img src={iconTrust} alt="" /></li>
                     <li className="list-inline-item"><img src={iconVerified} alt="" /></li>

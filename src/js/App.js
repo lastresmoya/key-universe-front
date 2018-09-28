@@ -13,7 +13,7 @@ import MyProfile from "./pages/MyProfile";
 import UserProfile from "./pages/UserProfile";
 import SearchPage from "./pages/SearchPage";
 import ProductPage from "./pages/ProductPage";
-import CartPage from "./pages/CartPage";
+import CheckoutPage from "./pages/CheckoutPage";
 import NewOffer from "./pages/NewOffer";
 
 import MainNav from './components/MainNav';
@@ -39,7 +39,7 @@ class AppContainer extends Component {
                     <Route path='/user-profile' component={UserProfile} />
                     <Route path='/search' component={SearchPage} />
                     <Route path='/product' component={ProductPage} />
-                    <Route path='/cart' component={CartPage} />
+                    <Route path='/checkout' component={CheckoutPage} />
                     <Route path='/my-profile/offers/new' component={NewOffer} />
                     <Footer/>
                     {/* <Route path="/clinician" render={() => <Dashboard {...{ currentDash: 'clinician' }} />} />

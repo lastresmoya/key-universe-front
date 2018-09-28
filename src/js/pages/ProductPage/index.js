@@ -4,8 +4,6 @@ import { Link } from 'react-router-dom';
 import FaIcon from '@fortawesome/react-fontawesome';
 import { 
     faAngleLeft ,
-    faMinus, 
-    faPlus 
 } from '@fortawesome/fontawesome-free-solid';
 
 import thumbLg from './assets/thumb-lg.png';
@@ -18,6 +16,7 @@ import thumby5 from './assets/thumb-sm-5.png';
 import UserAvatar from '../../components/UserAvatar';
 import Badges from '../../components/Badges';
 import SellersList from '../../components/SellersList';
+import Counter from '../../components/Counter';
 import ProductFeatures from './ProductFeatures';
 import ProductDetails from './ProductDetails';
 import SystemRequirements from './SystemRequirements';
@@ -55,14 +54,7 @@ function ProductPage(props) {
                                 <small>Includes donation for developers studio <strong>€3.00</strong></small>
                                 <div className="mb-3 mt-4">
                                     <span className="font-weight-bold">AVAILABLE KEYS</span>
-                                    <div className="d-flex align-items-end mb-4 mt-3">
-                                        <button className="btn btn-sm btn-outline-light"><FaIcon icon={faMinus}/></button>
-                                        <span className="mx-3 d-flex flex-column align-items-center">
-                                            <small>QTY</small>
-                                            <strong className="h6 m-0">2</strong>
-                                        </span>
-                                        <button className="btn btn-sm btn-outline-light"><FaIcon icon={faPlus}/></button>
-                                    </div>
+                                    <Counter/>
                                     <button data-aos="fade" className="mt-4 btn btn-block btn-primary btn-gradient font-spacing btn-lg"><small>ADD TO CART</small></button>
                                 </div>
                             </div>
