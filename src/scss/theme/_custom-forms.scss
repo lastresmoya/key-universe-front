@@ -280,3 +280,44 @@
     @include border-radius(0 $custom-file-border-radius $custom-file-border-radius 0);
   }
 }
+
+
+
+.custom-form-group {
+
+  border: 2px solid $white;
+  border-radius: $input-border-radius*2;
+  label {
+      padding: $input-padding-y*1.2 $input-padding-x 0;
+      margin: 0;
+      font-size: $font-size-sm;
+      text-transform: uppercase;
+      font-weight: $font-weight-normal;
+  }
+  .form-control {
+    border: 0;
+    background: transparent;
+    padding: $input-padding-y*1.2 $input-padding-x;
+
+    &:focus {
+      // color: $input-focus-color;
+      // background-color: $input-focus-bg;
+      border-color: transparent;
+      outline: 0;
+      background-color: rgba(0,0,0,.2);
+
+      // Avoid using mixin so we can pass custom focus shadow properly
+      @if $enable-shadows {
+        box-shadow: 0 0 0 transparent;
+      } @else {
+        box-shadow: 0 0 0 transparent;
+      }
+    }
+    
+
+    &::placeholder {
+      color: $white;
+    }
+  }
+  
+}
