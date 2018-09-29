@@ -66,10 +66,11 @@
 //
 
 .card-header {
-  padding: $card-spacer-y $card-spacer-x;
+  padding: $card-spacer-y*2 $card-spacer-x;
   margin-bottom: 0; // Removes the default margin-bottom of <hN>
   background-color: $card-cap-bg;
   border-bottom: $card-border-width solid $card-border-color;
+  border-bottom: $card-border-width solid rgba($white,.1);
 
   &:first-child {
     @include border-radius($card-inner-border-radius $card-inner-border-radius 0 0);
