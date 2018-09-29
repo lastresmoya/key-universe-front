@@ -34,7 +34,7 @@ function MainNav (props) {
             </ul>
             <div className="navbar-nav col-3 d-flex justify-content-sm-end">
                 <li className="nav-item">
-                    <a href="" className="nav-link text-primary">SIGN IN</a>
+                    <Link to={"/my-profile"} className="nav-link text-primary">SIGN IN</Link>
                 </li>
                 <li className="nav-item">
                     <Link to={'/checkout'} className="nav-link">

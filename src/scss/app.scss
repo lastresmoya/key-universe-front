@@ -98,3 +98,24 @@ body {
         }
     }
 }
+
+.nav-custom {
+    border-left: 1px solid rgba(255,255,255,.4);
+    .nav-item {
+        .nav-link {
+            transition: all .2s;
+            font-weight: $font-weight-normal;
+            color: rgba(255,255,255,.5);
+            border-left: 4px solid;
+            border-color: transparent;
+            padding: $nav-link-padding-y*1.1 $nav-link-padding-x;
+            svg {
+                @extend .mr-2;
+            }
+            &.active, &:hover {
+                color: $white;
+                border-color: theme-color('primary');
+            }
+        }    
+    }
+}

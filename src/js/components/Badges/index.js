@@ -15,8 +15,8 @@ function Badges (props) {
             }
             {props.size === "sm" &&
                 <ul className="list-inline m-0">
-                    <li className="list-inline-item"><img src={iconRespect} alt="" /></li>
-                    <li className="list-inline-item"><img src={iconTrust} alt="" /></li>
+                    <li className="list-inline-item mr-3"><img src={iconRespect} alt="" /></li>
+                    <li className="list-inline-item mr-3"><img src={iconTrust} alt="" /></li>
                     <li className="list-inline-item"><img src={iconVerified} alt="" /></li>
                 </ul>
             }
