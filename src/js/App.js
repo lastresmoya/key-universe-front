@@ -13,8 +13,9 @@ import MyProfile from "./pages/MyProfile";
 import UserProfile from "./pages/UserProfile";
 import SearchPage from "./pages/SearchPage";
 import ProductPage from "./pages/ProductPage";
-import CheckoutPage from "./pages/CheckoutPage";
-import CheckoutSuccess from "./pages/CheckoutSuccess";
+import CheckoutPage from "./pages/Checkout";
+import CheckoutFormPage from "./pages/Checkout/CheckoutFormPage";
+import CheckoutSuccessPage from "./pages/Checkout/CheckoutSuccessPage";
 
 import NewOffer from "./pages/NewOffer";
 
@@ -42,8 +43,9 @@ class AppContainer extends Component {
                     <Route path='/search' component={SearchPage} />
                     <Route path='/product' component={ProductPage} />
                     <Route path='/checkout' component={CheckoutPage} />
-                    <Route path='/checkout-success' component={CheckoutSuccess} />
-                    <Route path='/my-profile/offers/new' component={NewOffer} />
+                    <Route path='/checkout-form' component={CheckoutFormPage} />
+                    <Route path='/checkout-success' component={CheckoutSuccessPage} />
+                    <Route path='/my-profile-offers-new' component={NewOffer} />
                     <Footer/>
                     {/* <Route path="/clinician" render={() => <Dashboard {...{ currentDash: 'clinician' }} />} />
                     <Route path="/doctor" render={() => <Dashboard {...{ currentDash: 'doctor' }} />} /> */}

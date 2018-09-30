@@ -1,10 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import FaIcon from '@fortawesome/react-fontawesome';
-import { 
-    faAngleLeft ,
-} from '@fortawesome/fontawesome-free-solid';
 
 import thumbLg from './assets/thumb-lg.png';
 import thumby1 from './assets/thumb-sm-1.png';
@@ -14,6 +10,7 @@ import thumby4 from './assets/thumb-sm-4.png';
 import thumby5 from './assets/thumb-sm-5.png';
 
 import UserAvatar from '../../components/UserAvatar';
+import Breadcrumbs from '../../components/Navigation/Breadcrumbs';
 import Badges from '../../components/Badges';
 import SellersList from '../../components/SellersList';
 import Counter from '../../components/Counter';
@@ -25,11 +22,9 @@ function ProductPage(props) {
     return (
         <div>
             <div className="container">
-                <div className="row py-4">
-                    <div className="col">
-                        <Link to={'/'} className="btn-link font-spacing"><small><FaIcon icon={faAngleLeft} /> GO BACK TO THE MAIN PAGE</small></Link>
-                    </div>
-                </div>
+                <Link to={'/'} >
+                    <Breadcrumbs content="Go back to the main page"/>
+                </Link>
                 <div className="row">
                     <div className="col-sm-5">
                         <img src={thumbLg} className="img-fluid shadow-lg mb-4" alt="" data-aos="fade" />

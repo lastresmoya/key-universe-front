@@ -1,9 +1,9 @@
 import React from 'react';
 import thumbImg from './assets/thumb-witcher-md.png';
-import DescriptionItem from '../../components/DescriptionItem';
-import BtnPrimaryOutline from '../../components/Buttons/BtnPrimaryOutline';
+import DescriptionItem from '../../../components/DescriptionItem';
+import BtnPrimaryOutline from '../../../components/Buttons/BtnPrimaryOutline';
 
-function CheckoutSuccess(props) {
+function CheckoutSuccessPage(props) {
     return (
         <div className="my-5">
             <div className="container">
@@ -74,4 +74,4 @@ function CheckoutSuccess(props) {
     )
 }
 
-export default CheckoutSuccess;
+export default CheckoutSuccessPage;

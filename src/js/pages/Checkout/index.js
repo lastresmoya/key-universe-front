@@ -1,6 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import OrderListItem from './OrderListItem';
-import CheckoutFormModal from './CheckoutFormModal';
+import BtnPrimary from '../../components/Buttons/BtnPrimary';
+// import CheckoutFormModal from './CheckoutFormModal';
 
 function CheckoutPage (props) {
     return(
@@ -22,9 +24,12 @@ function CheckoutPage (props) {
                     <div className="font-spacing">TOTAL AMOUNT:</div><div className="h4 m-0 px-5">€30.00</div>
                 </div>
                 <div className="d-flex justify-content-end my-5">
-                    <button className="btn px-5 btn-primary btn-gradient font-spacing btn-lg" data-toggle="modal" data-target="#checkoutModal"><small>BUY KEYS</small></button>
+                    {/* <button className="btn px-5 btn-primary btn-gradient font-spacing btn-lg" data-toggle="modal" data-target="#checkoutModal"><small>BUY KEYS</small></button> */}
+                    <Link to={"/checkout-form"} >
+                        <BtnPrimary content="Buy Keys"/>
+                    </Link>
                 </div>
-                <CheckoutFormModal/>
+                {/* <CheckoutFormModal/> */}
             </div>
         </div>
     )
