@@ -294,18 +294,15 @@
       text-transform: uppercase;
       font-weight: $font-weight-normal;
   }
-  .form-control {
+  .form-control, 
+  .custom-select {
     border: 0;
     background: transparent;
-    padding: $input-padding-y*1.2 $input-padding-x;
+    color: $white;
 
     &:focus {
-      // color: $input-focus-color;
-      // background-color: $input-focus-bg;
       border-color: transparent;
       outline: 0;
-      background-color: rgba(0,0,0,.2);
-
       // Avoid using mixin so we can pass custom focus shadow properly
       @if $enable-shadows {
         box-shadow: 0 0 0 transparent;
@@ -313,11 +310,19 @@
         box-shadow: 0 0 0 transparent;
       }
     }
-    
+  }
+  .form-control {
+    padding: $input-padding-y*1.2 $input-padding-x;
+    &:focus {
+      background-color: rgba(0,0,0,.2);
 
+      
+    }
     &::placeholder {
       color: $white;
     }
+  }
+  .custom-select {
   }
   
 }
