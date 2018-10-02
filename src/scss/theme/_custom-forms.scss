@@ -294,11 +294,19 @@
       text-transform: uppercase;
       font-weight: $font-weight-normal;
   }
+  &:hover {
+    .form-control, 
+    .custom-select {
+      background-color: rgba(0,0,0,.2);
+      cursor: pointer;
+    }
+  }
   .form-control, 
   .custom-select {
     border: 0;
     background: transparent;
     color: $white;
+    transition: all .3s;
 
     &:focus {
       border-color: transparent;
@@ -323,6 +331,7 @@
     }
   }
   .custom-select {
+
   }
   
 }

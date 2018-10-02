@@ -8,7 +8,7 @@ import {
 
 function UserAvatar (props) {
     return(
-        <div className="py-3 d-flex justify-content-start align-items-center">
+        <div className="py-1 d-flex justify-content-start align-items-center">
             <img src={avatar} alt="" className="mr-2" />
             <div className="d-flex flex-column">
                 <small className="text-white">CAPTAIN_PEROXIDE</small>

@@ -1,5 +1,8 @@
 
 import React from 'react';
+import FaIcon from '@fortawesome/react-fontawesome';
+import { faCaretDown } from '@fortawesome/fontawesome-free-solid';
+
 
 function CustomSelect({label,opts}) {
     let renderOptions = () => {
@@ -14,6 +17,7 @@ function CustomSelect({label,opts}) {
         <div className="form-group custom-form-group">
         
             <label htmlFor={`input${label}`}>{label}</label>
+            <FaIcon icon={faCaretDown}/>
 
             <select className="custom-select" id={`inputGroupSelect${label}`}>
                 {/* <option defaultValue>{opts[0]}</option> */}
