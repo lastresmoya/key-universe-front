@@ -14,13 +14,13 @@ import {
  } from '@fortawesome/fontawesome-free-brands';
 
 
-function CheckoutFormPage(props) {
+function CheckoutForm(props) {
     return (
         <div>
             <div className="container">
                 <div className="row">
                     <div className="col">
-                        <Link to={'/checkout'}>
+                        <Link to={'/checkout/cart'}>
                             <Breadcrumbs content="Go back to order details" />
                         </Link>
                         <div className="row">
@@ -96,7 +96,7 @@ function CheckoutFormPage(props) {
                                     </div>
 
                                     <div className="form-row my-4 d-flex justify-content-end">
-                                        <Link to={`/checkout-success`} className="shadow-lg">
+                                        <Link to={"/checkout/success"} className="shadow-lg">
                                             <BtnPrimary content="Continue" />
                                         </Link>
                                     </div>
@@ -149,4 +149,4 @@ function CheckoutFormPage(props) {
     )
 }
 
-export default CheckoutFormPage;
+export default CheckoutForm;

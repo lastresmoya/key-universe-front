@@ -4,7 +4,7 @@ import OrderListItem from './OrderListItem';
 import BtnPrimary from '../../components/Buttons/BtnPrimary';
 // import CheckoutFormModal from './CheckoutFormModal';
 
-function CheckoutPage (props) {
+function CheckoutCart (props) {
     return(
         <div className="my-4 pt-4 pb-5">
             <div className="container">
@@ -25,7 +25,7 @@ function CheckoutPage (props) {
                 </div>
                 <div className="d-flex justify-content-end my-5">
                     {/* <button className="btn px-5 btn-primary btn-gradient font-spacing btn-lg" data-toggle="modal" data-target="#checkoutModal"><small>BUY KEYS</small></button> */}
-                    <Link to={"/checkout-form"} >
+                    <Link to={"/checkout/form"} >
                         <BtnPrimary content="Buy Keys"/>
                     </Link>
                 </div>
@@ -35,4 +35,4 @@ function CheckoutPage (props) {
     )
 }
 
-export default CheckoutPage;
+export default CheckoutCart;

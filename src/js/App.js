@@ -10,15 +10,16 @@ import {
 } from './redux';
 
 import HomePage from "./pages/HomePage";
-import MyProfile from "./pages/Profile/MyProfile";
+
+import ProfileGeneral from "./pages/Profile/General";
+import ProfileOffers from "./pages/Profile/Offers";
+
 import PublicProfile from "./pages/Profile/PublicProfile";
 import SearchPage from "./pages/SearchPage";
 import ProductPage from "./pages/ProductPage";
-import CheckoutPage from "./pages/Checkout";
-import CheckoutFormPage from "./pages/Checkout/CheckoutFormPage";
-import CheckoutSuccessPage from "./pages/Checkout/CheckoutSuccessPage";
-
-import NewOffer from "./pages/NewOffer";
+import Checkout from "./pages/Checkout";
+import CheckoutForm from "./pages/Checkout/CheckoutForm";
+import CheckoutSuccess from "./pages/Checkout/CheckoutSuccess";
 
 import MainNav from './components/MainNav';
 import Footer from './components/Footer';
@@ -45,14 +46,14 @@ class AppContainer extends Component {
                     <MainNav/>
                     <Route component={ScrollToTop} />
                     <Route exact path='/' component={HomePage} />
-                    <Route path='/my-profile' component={MyProfile} />
+                    <Route path='/profile/general' component={ProfileGeneral} />
+                    <Route path='/profile/offers' component={ProfileOffers} />
                     <Route path='/public-profile' component={PublicProfile} />
                     <Route path='/search' component={SearchPage} />
                     <Route path='/product' component={ProductPage} />
-                    <Route path='/checkout' component={CheckoutPage} />
-                    <Route path='/checkout-form' component={CheckoutFormPage} />
-                    <Route path='/checkout-success' component={CheckoutSuccessPage} />
-                    <Route path='/my-profile-offers-new' component={NewOffer} />
+                    <Route path='/checkout/cart' component={Checkout} />
+                    <Route path='/checkout/form' component={CheckoutForm} />
+                    <Route path='/checkout/success' component={CheckoutSuccess} />
                     <Footer/>
                     {/* <Route path="/clinician" render={() => <Dashboard {...{ currentDash: 'clinician' }} />} />
                     <Route path="/doctor" render={() => <Dashboard {...{ currentDash: 'doctor' }} />} /> */}

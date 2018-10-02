@@ -34,10 +34,10 @@ function MainNav (props) {
             </ul>
             <div className="navbar-nav col-3 d-flex justify-content-sm-end">
                 <li className="nav-item">
-                    <Link to={"/my-profile"} className="nav-link text-primary">SIGN IN</Link>
+                    <Link to={"/profile/general"} className="nav-link text-primary">SIGN IN</Link>
                 </li>
                 <li className="nav-item">
-                    <Link to={'/checkout'} className="nav-link">
+                    <Link to={'/checkout/cart'} className="nav-link">
                         <span className="h6"><FaIcon icon={faShoppingCart} /></span>
                         <span className="badge badge-info">2</span>
                     </Link>

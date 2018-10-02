@@ -3,7 +3,7 @@ import thumbImg from './assets/thumb-witcher-md.png';
 import DescriptionItem from '../../../components/DescriptionItem';
 import BtnPrimaryOutline from '../../../components/Buttons/BtnPrimaryOutline';
 
-function CheckoutSuccessPage(props) {
+function CheckoutSuccess(props) {
     return (
         <div className="my-5">
             <div className="container">
@@ -74,4 +74,4 @@ function CheckoutSuccessPage(props) {
     )
 }
 
-export default CheckoutSuccessPage;
+export default CheckoutSuccess;
