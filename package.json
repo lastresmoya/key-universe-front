@@ -9,7 +9,6 @@
     "build": "npm run clean && NODE_ENV=production webpack -p",
     "clean": "rimraf ./dist/*"
   },
-  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lastresmoya/key-universe-front.git"
@@ -39,10 +38,10 @@
     "axios": "^0.18.0",
     "babel-core": "6.26.0",
     "babel-loader": "7.1.2",
-    "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "bootstrap": "^4.0.0",
     "font-awesome": "^4.7.0",
+    "history": "^4.7.2",
     "jquery": "^3.3.1",
     "moment": "^2.20.1",
     "popper.js": "^1.14.1",
@@ -55,13 +54,12 @@
   },
   "devDependencies": {
     "autoprefixer": "^7.1.4",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
     "copy-webpack-plugin": "^4.0.1",
     "css-loader": "^0.28.7",
     "cssnano": "^3.10.0",
-    "babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-react": "^6.24.1",
-    "parcel-bundler": "^1.6.1",
     "eslint": "^4.6.1",
     "eslint-config-airbnb": "^15.1.0",
     "eslint-config-react-app": "^2.1.0",
@@ -76,6 +74,7 @@
     "html-webpack-plugin": "^2.26.0",
     "image-webpack-loader": "^4.2.0",
     "node-sass": "^4.4.0",
+    "parcel-bundler": "^1.6.1",
     "postcss-import": "^10.0.0",
     "postcss-loader": "^2.0.6",
     "rimraf": "^2.6.0",

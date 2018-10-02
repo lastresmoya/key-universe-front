@@ -1,7 +1,7 @@
 import React from 'react';
 import Counter from '../../../components/Counter';
 import Badges from '../../../components/Badges';
-import UserAvatar from '../../../components/UserAvatar';
+import UserAvatar from '../../../components/Avatars/UserAvatar';
 import gameThumb from './assets/thumb-order.png';
 
 import FaIcon from '@fortawesome/react-fontawesome';

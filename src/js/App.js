@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { HashRouter as Router, Route } from 'react-router-dom';
+
 import { connect } from 'react-redux';
 import AOS from 'aos';
 
@@ -9,8 +10,8 @@ import {
 } from './redux';
 
 import HomePage from "./pages/HomePage";
-import MyProfile from "./pages/MyProfile";
-import UserProfile from "./pages/UserProfile";
+import MyProfile from "./pages/Profile/MyProfile";
+import PublicProfile from "./pages/Profile/PublicProfile";
 import SearchPage from "./pages/SearchPage";
 import ProductPage from "./pages/ProductPage";
 import CheckoutPage from "./pages/Checkout";
@@ -21,6 +22,11 @@ import NewOffer from "./pages/NewOffer";
 
 import MainNav from './components/MainNav';
 import Footer from './components/Footer';
+
+const ScrollToTop = () => {
+    window.scrollTo(0, 0);
+    return null;
+};
 
 class AppContainer extends Component {
     componentDidMount() {
@@ -37,9 +43,10 @@ class AppContainer extends Component {
             <Router>
                 <div>
                     <MainNav/>
+                    <Route component={ScrollToTop} />
                     <Route exact path='/' component={HomePage} />
                     <Route path='/my-profile' component={MyProfile} />
-                    <Route path='/user-profile' component={UserProfile} />
+                    <Route path='/public-profile' component={PublicProfile} />
                     <Route path='/search' component={SearchPage} />
                     <Route path='/product' component={ProductPage} />
                     <Route path='/checkout' component={CheckoutPage} />

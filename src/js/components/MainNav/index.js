@@ -13,7 +13,7 @@ function MainNav (props) {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-gradient-secondary d-flex justify-content-center">
             <div className="col-3">
-                <a className="navbar-brand" href="#"><img src={logo} alt="" /></a>
+                <Link className="navbar-brand" to={"/"}><img src={logo} alt="" /></Link>
             </div>
             <ul className="navbar-nav col-6 d-flex justify-content-center">
                 <li className="nav-item  active">

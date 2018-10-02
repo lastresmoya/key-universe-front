@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import UserAvatar from '../UserAvatar';
+import UserAvatar from '../Avatars/UserAvatar';
 import thumb from './assets/game-thumbnail.png';
 import iconGivingGame from './assets/icon-giving-game.png';
 import FaIcon from '@fortawesome/react-fontawesome';

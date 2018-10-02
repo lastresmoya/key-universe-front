@@ -1,8 +1,8 @@
 import React from 'react';
-import Badges from '../../components/Badges';
-import DescriptionItem from '../../components/DescriptionItem';
-import AvatarImg from '../../components/Avatars/AvatarImg';
-import BtnPrimaryOutline from '../../components/Buttons/BtnPrimaryOutline';
+import Badges from '../../../components/Badges';
+import DescriptionItem from '../../../components/DescriptionItem';
+import AvatarImg from '../../../components/Avatars/AvatarImg';
+import BtnPrimaryOutline from '../../../components/Buttons/BtnPrimaryOutline';
 
 import FaIcon from '@fortawesome/react-fontawesome';
 import { 

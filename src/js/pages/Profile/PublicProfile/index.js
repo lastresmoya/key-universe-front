@@ -8,10 +8,10 @@ import {
     faGem
 } from '@fortawesome/fontawesome-free-solid';
 
-import GameCard from '../../components/GameCard';
-import Badges from '../../components/Badges';
+import GameCard from '../../../components/GameCard';
+import Badges from '../../../components/Badges';
 
-function UserProfile (props){
+function PublicProfile (props){
     return(
         <div>
             <div className="container">
@@ -98,4 +98,4 @@ function UserProfile (props){
     )
 }
 
-export default UserProfile
+export default PublicProfile

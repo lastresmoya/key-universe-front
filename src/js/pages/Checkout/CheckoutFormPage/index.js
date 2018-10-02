@@ -34,19 +34,19 @@ function CheckoutFormPage(props) {
                                     <div className="form-group mb-5">
                                         <div className="custom-control custom-radio my-2">
                                             <input type="radio" id="customRadio1" name="customRadio" className="custom-control-input"/>
-                                            <label className="custom-control-label " for="customRadio1">
+                                            <label className="custom-control-label " htmlFor="customRadio1">
                                                 <span className="h5 font-weight-light mr-2"><FaIcon icon={faCcPaypal} /></span> Paypal
                                             </label>
                                         </div>
                                         <div className="custom-control custom-radio my-2">
                                             <input type="radio" id="customRadio2" name="customRadio" className="custom-control-input"/>
-                                            <label className="custom-control-label" for="customRadio2">
+                                            <label className="custom-control-label" htmlFor="customRadio2">
                                                 <span className="h5 font-weight-light mr-2"><FaIcon icon={faAmazonPay} /></span>
                                                 Amazon Pay</label>
                                         </div>
                                         <div className="custom-control custom-radio my-2">
                                             <input type="radio" id="customRadio3" name="customRadio" className="custom-control-input" />
-                                            <label className="custom-control-label" for="customRadio3">
+                                            <label className="custom-control-label" htmlFor="customRadio3">
                                                 <span className="h5 font-weight-light mr-2"><FaIcon icon={faCreditCard} /> </span>
                                                 Credit Card
                                             </label>

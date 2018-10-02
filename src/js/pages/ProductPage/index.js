@@ -9,7 +9,7 @@ import thumby3 from './assets/thumb-sm-3.png';
 import thumby4 from './assets/thumb-sm-4.png';
 import thumby5 from './assets/thumb-sm-5.png';
 
-import UserAvatar from '../../components/UserAvatar';
+import UserAvatar from '../../components/Avatars/UserAvatar';
 import Breadcrumbs from '../../components/Navigation/Breadcrumbs';
 import Badges from '../../components/Badges';
 import SellersList from '../../components/SellersList';
