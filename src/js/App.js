@@ -12,7 +12,8 @@ import {
 import HomePage from "./pages/HomePage";
 
 import ProfileGeneral from "./pages/Profile/General";
-import ProfileOffers from "./pages/Profile/Offers";
+import MyOffers from "./pages/Profile/Offers";
+import NewOffer from "./pages/Profile/Offers/NewOffer";
 
 import PublicProfile from "./pages/Profile/PublicProfile";
 import SearchPage from "./pages/SearchPage";
@@ -47,7 +48,8 @@ class AppContainer extends Component {
                     <Route component={ScrollToTop} />
                     <Route exact path='/' component={HomePage} />
                     <Route path='/profile/general' component={ProfileGeneral} />
-                    <Route path='/profile/offers' component={ProfileOffers} />
+                    <Route path='/profile/offers/my-offers' component={MyOffers} />
+                    <Route path='/profile/offers/new' component={NewOffer} />
                     <Route path='/public-profile' component={PublicProfile} />
                     <Route path='/search' component={SearchPage} />
                     <Route path='/product' component={ProductPage} />

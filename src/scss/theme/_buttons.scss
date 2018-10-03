@@ -87,6 +87,7 @@ fieldset[disabled] a.btn {
   color: $link-color;
   background-color: transparent;
   letter-spacing: .2rem;
+  cursor: pointer;
 
   @include hover {
     color: $link-hover-color;

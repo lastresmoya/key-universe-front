@@ -9,7 +9,7 @@ import FaIcon from '@fortawesome/react-fontawesome';
 import { faPlus } from '@fortawesome/fontawesome-free-solid';
 
 
-function Offers(props) {
+function MyOffers(props) {
     return (
         <ProfileMain>
             <h4>My Offers</h4>
@@ -57,4 +57,4 @@ function Offers(props) {
     );
 }
 
-export default Offers;
+export default MyOffers;
