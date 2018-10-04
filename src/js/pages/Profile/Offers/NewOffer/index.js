@@ -15,8 +15,8 @@ class NewOffer extends Component {
     constructor(props){
         super(props);
         this.state = {
-            stepVal: 3,
-            currentView: `Step3`,
+            stepVal: 4,
+            currentView: `Step4`,
         }
         this.nextStep = this.nextStep.bind(this);
         this.prevStep = this.prevStep.bind(this);

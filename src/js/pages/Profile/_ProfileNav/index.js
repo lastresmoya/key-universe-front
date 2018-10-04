@@ -23,6 +23,11 @@ function ProfileNav(props) {
             </li>
             <li className="nav-item">
                 <NavLink to={'/profile/offers/my-offers'} activeClassName="active" className="nav-link" href="#"><FaIcon icon={faTags} /> MY OFFERS</NavLink>
+                {/* <ul>
+                    <li className="nav-item">
+                        <NavLink to={'/profile/offers/new'} activeClassName="active" className="nav-link" href="#">Create new offer</NavLink>
+                    </li>
+                </ul> */}
             </li>
             <li className="nav-item">
                 <a className="nav-link" href="#"><FaIcon icon={faCreditCard} /> BANK ACCOUNT</a>
