@@ -19,60 +19,75 @@ class NewOffer extends Component {
             currentView: `Step1`,
         }
         this.nextStep = this.nextStep.bind(this);
+        this.prevStep = this.prevStep.bind(this);
 
     }
-    prevStep(step){
-        // this.setState({currentStep: step})
+    prevStep(){
+        // if (this.state.stepVal <= 4) {
+        //     this.setState({
+        //         stepVal: this.state.stepVal + 1,
+        //         currentView: `Step${this.state.stepVal + 1}`
+        //     })
+        // } 
+        this.setState({
+            stepVal: this.state.stepVal - 1,
+            currentView: `Step${this.state.stepVal - 1}`
+        })
     }
     nextStep() {    
-        if (this.state.stepVal <= 4){
+        // if (this.state.stepVal <= 4){
             this.setState({
                 stepVal: this.state.stepVal + 1,
                 currentView: `Step${this.state.stepVal + 1}`
             }) 
-        } 
+        // } 
     }
     render(){
         const { stepVal,currentView } = this.state;
         console.log(stepVal, currentView)
         return (
             <ProfileMain>
-                Steppers
-                <h4 className="mb-2">Create new offer</h4> 
-                {/* {currentStep === 1 && 
-                    <Step1/>
-                } */}
-                {{
-                    Step1: <Step1 /> ,
-                    Step2: <Step2 />,
-                    Step3: <Step3 />,
-                    Step4: <Step4 />,
-                    Step5: <Step5 />,
-                    default: <Step1 />
-                }[currentView]}
+                <div className="row">
+                    <div className="col-sm-8">
+                        Steppers
+                        <h4 className="mb-4 ">Create new offer</h4>
+                        {/* Steps Rendering */}
+                        {{
+                            Step1: <Step1 />,
+                            Step2: <Step2 />,
+                            Step3: <Step3 />,
+                            Step4: <Step4 />,
+                            Step5: <Step5 />,
+                            default: <Step1 />
+                        }[currentView]}
 
-                <div>
-                    {currentView === "Step1" ?
-                        <Link to={'/profile/offers/my-offers'}>
-                            <BtnLink content="Cancel" />
-                        </Link>
-                        :
-                        <BtnLink content="Back" />
-                    }
-                    {currentView !== "Step5" ?
-                        <div onClick={() => this.nextStep()}>
-                            <BtnPrimary content="Next" />
-                        </div>
-                        :
-                        <div>
-                            
-                            <div data-toggle="modal" data-target="#checkoutModal">
-                                <BtnPrimary content="Confirm" />
-                            </div>
-                            <CheckoutFormModal/>
+                        {/* Steps Navigation */}
+                        <div className="d-flex align-items-center justify-content-end">
+                            {currentView === "Step1" ?
+                                <Link to={'/profile/offers/my-offers'} className="px-4">
+                                    <BtnLink content="Cancel" />
+                                </Link>
+                                :
+                                <div onClick={() => this.prevStep()} className="px-4">
+                                    <BtnLink content="Back" />
+                                </div>
+                            }
+                            {currentView !== "Step5" ?
+                                <div onClick={() => this.nextStep()}>
+                                    <BtnPrimary content="Next" />
+                                </div>
+                                :
+                                <div>
 
+                                    <div data-toggle="modal" data-target="#checkoutModal">
+                                        <BtnPrimary content="Confirm" />
+                                    </div>
+                                    <CheckoutFormModal />
+
+                                </div>
+                            }
                         </div>
-                    }
+                    </div>
                 </div>
 
             </ProfileMain>
