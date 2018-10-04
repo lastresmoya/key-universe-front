@@ -2,7 +2,7 @@ import React from "react";
 
 function Step5(props) {
     return (
-        <div>
+        <div data-aos="fade-up">
             Step 5
         </div>
     );

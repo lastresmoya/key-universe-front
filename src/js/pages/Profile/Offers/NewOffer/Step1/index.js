@@ -4,7 +4,7 @@ import CustomSelect from '../../../../../components/Forms/CustomSelect';
 
 function Step1 (props) {
     return (
-        <div>
+        <div data-aos="fade">
             <h5 className="font-spacing font-weight-light">STEP 1: GENERAL INFORMATION</h5>
             <p>Choose general game information and key's quantity that you want to sell.</p>
             <div className="py-3">

@@ -23,12 +23,6 @@ class NewOffer extends Component {
 
     }
     prevStep(){
-        // if (this.state.stepVal <= 4) {
-        //     this.setState({
-        //         stepVal: this.state.stepVal + 1,
-        //         currentView: `Step${this.state.stepVal + 1}`
-        //     })
-        // } 
         this.setState({
             stepVal: this.state.stepVal - 1,
             currentView: `Step${this.state.stepVal - 1}`
@@ -44,7 +38,6 @@ class NewOffer extends Component {
     }
     render(){
         const { stepVal,currentView } = this.state;
-        console.log(stepVal, currentView)
         return (
             <ProfileMain>
                 <div className="row">
