@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import BtnLink from '../../../../components/Buttons/BtnLink';
 import BtnPrimary from '../../../../components/Buttons/BtnPrimary';
 import ProfileMain from '../../';
-import CheckoutFormModal from '../../../Checkout/_CheckoutFormModal';
+import ModalDefault from '../../../../components/Modals/ModalDefault';
 
 import Step1 from './Step1';
 import Step2 from './Step2';
@@ -15,8 +15,8 @@ class NewOffer extends Component {
     constructor(props){
         super(props);
         this.state = {
-            stepVal: 5,
-            currentView: `Step5`,
+            stepVal: 1,
+            currentView: `Step1`,
         }
         this.nextStep = this.nextStep.bind(this);
         this.prevStep = this.prevStep.bind(this);
@@ -38,6 +38,13 @@ class NewOffer extends Component {
     }
     render(){
         const { stepVal,currentView } = this.state;
+        const modalSuccess = {
+            id: "offer-created",
+            title: "The offer has been created",
+            type: "success",
+            content: "Please, pay attention that in case you made mistakes you have to close the current offer and create the new one.",
+            link: "/profile/offers/my-offers"
+        }
         return (
             <ProfileMain>
                 <div className="row">
@@ -71,11 +78,17 @@ class NewOffer extends Component {
                                 </div>
                                 :
                                 <div>
-
-                                    <div data-toggle="modal" data-target="#checkoutModal">
+                                    
+                                    <div data-toggle="modal" data-target={`#${modalSuccess.id}Modal`}>
                                         <BtnPrimary content="Confirm" />
                                     </div>
-                                    <CheckoutFormModal />
+                                    <ModalDefault 
+                                        type={modalSuccess.type}
+                                        id={modalSuccess.id} 
+                                        title={modalSuccess.title} 
+                                        content={modalSuccess.content}
+                                        link={modalSuccess.link}
+                                        />
 
                                 </div>
                             }
