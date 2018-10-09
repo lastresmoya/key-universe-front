@@ -42,13 +42,13 @@ function MyOffers(props) {
                         </div>
                     </Link>
                 </div>
-                <GameCard size="sm" detail="2 key(s)"/>
-                <GameCard size="sm" detail="5 key(s)"/>
-                <GameCard size="sm" detail="6 key(s)"/>
-                <GameCard size="sm" detail="8 key(s)"/>
-                <GameCard size="sm" detail="5 key(s)"/>
-                <GameCard size="sm" detail="3 key(s)"/>
-                <GameCard size="sm" detail="1 key(s)"/>
+                <GameCard type={'offer'} size="sm" detail="2 key(s)"/>
+                <GameCard type={'offer'} size="sm" detail="5 key(s)"/>
+                <GameCard type={'offer'} size="sm" detail="6 key(s)"/>
+                <GameCard type={'offer'} size="sm" detail="8 key(s)"/>
+                <GameCard type={'offer'} size="sm" detail="5 key(s)"/>
+                <GameCard type={'offer'} size="sm" detail="3 key(s)"/>
+                <GameCard type={'offer'} size="sm" detail="1 key(s)"/>
             </div>
             <Pagination/>
 

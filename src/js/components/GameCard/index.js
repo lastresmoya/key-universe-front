@@ -4,13 +4,27 @@ import UserAvatar from '../Avatars/UserAvatar';
 import GameCardImg from './GameCardImg';
 
 class GameCard extends Component {
-    state = {
-        fadeDelay: Math.ceil((Math.floor(Math.random() * 400) + 0)/100)*100 ,
+    constructor(props){
+        super(props);
+        this.state = {
+            fadeDelay: Math.ceil((Math.floor(Math.random() * 400) + 0) / 100) * 100,
+        }
+        this.linkTo = this.linkTo.bind(this);
+    }
+    
+    linkTo(){
+        if(this.props.type === "offer"){
+            return '/profile/offer/1'
+        } else {
+            return '/product'
+        }
     }
     render () {
+        console.log(this.props)
+        // cont linkTo = this.props.
         return (
             <div className="col-sm-3 col-6">
-                <Link to={'/product'} className="game-card">
+                <Link to={this.linkTo()} className="game-card">
                     <div data-aos="fade" data-aos-delay={this.state.fadeDelay}>
                         <GameCardImg />
                     </div>

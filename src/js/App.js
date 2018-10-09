@@ -14,6 +14,7 @@ import HomePage from "./pages/HomePage";
 import ProfileGeneral from "./pages/Profile/General";
 import MyOffers from "./pages/Profile/Offers";
 import NewOffer from "./pages/Profile/Offers/NewOffer";
+import ProfileOffer from "./pages/Profile/Offers/ProfileOffer";
 
 import PublicProfile from "./pages/Profile/PublicProfile";
 import SearchPage from "./pages/SearchPage";
@@ -50,6 +51,7 @@ class AppContainer extends Component {
                     <Route path='/profile/general' component={ProfileGeneral} />
                     <Route path='/profile/offers/my-offers' component={MyOffers} />
                     <Route path='/profile/offers/new' component={NewOffer} />
+                    <Route path='/profile/offer/:id' component={ProfileOffer} />
                     <Route path='/public-profile' component={PublicProfile} />
                     <Route path='/search' component={SearchPage} />
                     <Route path='/product' component={ProductPage} />

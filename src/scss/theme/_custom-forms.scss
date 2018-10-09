@@ -331,7 +331,10 @@
     }
   }
   .custom-select {
-
+    // padding-bottom: .2rem;
+    //  font-size: $font-size-sm;
+    // padding: $custom-select-padding-y/2 ($custom-select-padding-x + $custom-select-indicator-padding) $custom-select-padding-y $custom-select-padding-x;
+    // height: ($font-size-sm * $input-btn-line-height) + ($input-btn-padding-y)
   }
   
 }
