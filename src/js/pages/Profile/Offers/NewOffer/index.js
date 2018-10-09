@@ -5,6 +5,10 @@ import BtnPrimary from '../../../../components/Buttons/BtnPrimary';
 import ProfileMain from '../../';
 import ModalDefault from '../../../../components/Modals/ModalDefault';
 
+import FaIcon from '@fortawesome/react-fontawesome';
+import { faCircle } from '@fortawesome/fontawesome-free-solid';
+
+
 import Step1 from './Step1';
 import Step2 from './Step2';
 import Step3 from './Step3';
@@ -49,7 +53,13 @@ class NewOffer extends Component {
             <ProfileMain>
                 <div className="row">
                     <div className="col-sm-8">
-                        Steppers
+                        <div className="h4 py-3 d-flex align-items-center justify-content-between">
+                            <span className={stepVal === 1 ? "text-white" : "text-info"}><FaIcon icon={faCircle} /></span>
+                            <span className={stepVal === 2 ? "text-white" : "text-info"}><FaIcon icon={faCircle} /></span>
+                            <span className={stepVal === 3 ? "text-white" : "text-info"}><FaIcon icon={faCircle} /></span>
+                            <span className={stepVal === 4 ? "text-white" : "text-info"}><FaIcon icon={faCircle} /></span>
+                            <span className={stepVal === 5 ? "text-white" : "text-info"}><FaIcon icon={faCircle} /></span>
+                        </div>
                         <h4 className="mb-4 ">Create new offer</h4>
                         {/* Steps Rendering */}
                         {{

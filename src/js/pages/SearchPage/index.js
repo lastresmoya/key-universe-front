@@ -43,7 +43,7 @@ function SearchPage (props) {
                         <CustomSelect label="DEVELOPERS" opts={["All"]} />
                     </div>
                     <div className="col">
-                        <CustomSelect label="SORT BY" opts={["Lowest to highest price"]} />
+                        <CustomSelect label="SORT BYs" opts={["Lowest to highest price"]} />
                     </div>
                 </div>
                 <div className="row">
