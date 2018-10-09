@@ -20,10 +20,13 @@ class GameCard extends Component {
         }
     }
     render () {
-        console.log(this.props)
+        const { size } = this.props;
+        const renderSize = (colSize) => {
+            return colSize ? `col-sm-${size}` : `col-sm-3`
+        };
         // cont linkTo = this.props.
         return (
-            <div className="col-sm-3 col-6">
+            <div className={`${renderSize(size)} col-6`}>
                 <Link to={this.linkTo()} className="game-card">
                     <div data-aos="fade" data-aos-delay={this.state.fadeDelay}>
                         <GameCardImg />
