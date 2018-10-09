@@ -1,7 +1,7 @@
 import React from "react";
 import ProfileMain from '../../';
 
-function ProfileOffer(props) {
+function ProfileDetail(props) {
     return (
         <ProfileMain>
             <div>
@@ -13,4 +13,4 @@ function ProfileOffer(props) {
     );
 }
 
-export default ProfileOffer;
+export default ProfileDetail;

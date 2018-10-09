@@ -12,9 +12,11 @@ import {
 import HomePage from "./pages/HomePage";
 
 import ProfileGeneral from "./pages/Profile/General";
+import Purchases from "./pages/Profile/Purchases";
+import PurchaseDetail from "./pages/Profile/Purchases/PurchaseDetail";
 import MyOffers from "./pages/Profile/Offers";
 import NewOffer from "./pages/Profile/Offers/NewOffer";
-import ProfileOffer from "./pages/Profile/Offers/ProfileOffer";
+import OfferDetail from "./pages/Profile/Offers/OfferDetail";
 
 import PublicProfile from "./pages/Profile/PublicProfile";
 import SearchPage from "./pages/SearchPage";
@@ -49,9 +51,11 @@ class AppContainer extends Component {
                     <Route component={ScrollToTop} />
                     <Route exact path='/' component={HomePage} />
                     <Route path='/profile/general' component={ProfileGeneral} />
+                    <Route path='/profile/purchases/my-purchases' component={Purchases} />
+                    <Route path='/profile/purchase/:id' component={PurchaseDetail} />
                     <Route path='/profile/offers/my-offers' component={MyOffers} />
                     <Route path='/profile/offers/new' component={NewOffer} />
-                    <Route path='/profile/offer/:id' component={ProfileOffer} />
+                    <Route path='/profile/offer/:id' component={OfferDetail} />
                     <Route path='/public-profile' component={PublicProfile} />
                     <Route path='/search' component={SearchPage} />
                     <Route path='/product' component={ProductPage} />
