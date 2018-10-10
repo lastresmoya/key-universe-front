@@ -11,7 +11,7 @@ function ProfileMain(props) {
                         <ProfileNav />
                     </div>
                     {/* Content */}
-                    <div className="col-sm-9">
+                    <div className="col-sm-9 pb-5 mb-5">
                         {props.children}
                     </div>
                 </div>

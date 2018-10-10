@@ -82,6 +82,9 @@
 
 .table-hover {
   tbody tr {
+    &.active {
+      background-color: $table-hover-bg;
+    }
     @include hover {
       background-color: $table-hover-bg;
     }
@@ -154,6 +157,7 @@
 
   &.table-hover {
     tbody tr {
+      
       @include hover {
         background-color: $table-dark-hover-bg;
       }
