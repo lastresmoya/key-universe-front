@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link } from 'react-router-dom';
 import ProfileMain from '../';
 import BtnPrimary from '../../../components/Buttons/BtnPrimary';
+import CustomSelect from '../../../components/Forms/CustomSelect';
 import DescriptionItem from '../../../components/DescriptionItem';
 import FaIcon from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/fontawesome-free-solid';
@@ -22,6 +23,14 @@ class BankAccounts extends Component {
         return (
             <ProfileMain>
                 <h4>Bank Account</h4>
+
+                {/* When there are no accounts */}
+                {/* <p>To add the bank account and withdraw money for your selling, please fill the information below.</p>
+                <div className="row">
+                    <div className="col-sm-6">
+                        <CustomSelect label="Country" opts={["United Kingdom","US"]}/>
+                    </div>
+                </div> */}
 
                 <table className="table table-hover">
                     <thead>
