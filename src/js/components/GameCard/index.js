@@ -15,12 +15,14 @@ class GameCard extends Component {
     linkTo(){
         if(this.props.type === "offer"){
             return '/profile/offer/1'
+        } else if (this.props.type === "purchase") {
+            return '/profile/purchase/1'
         } else {
             return '/product'
         }
     }
     render () {
-        const { size } = this.props;
+        const { size, user } = this.props;
         const renderSize = (colSize) => {
             return colSize ? `col-sm-${size}` : `col-sm-3`
         };
@@ -31,7 +33,7 @@ class GameCard extends Component {
                     <div data-aos="fade" data-aos-delay={this.state.fadeDelay}>
                         <GameCardImg />
                     </div>
-                    {this.props.size === "sm" ? null : <UserAvatar/> }
+                    {user ? null : <UserAvatar/> }
                     <div className="game-card-footer pt-2">
                         <h5 className="m-0">{this.props.title || "Dark Souls III"}</h5>
                         <small className="font-weight-light"><i>{this.props.detail || "Action role-playing"}</i></small>

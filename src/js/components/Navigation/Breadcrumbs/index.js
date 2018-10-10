@@ -9,7 +9,7 @@ import {
 
 function Breadcrumbs({content}) {
     return (
-        <div className="py-4">
+        <div className="pt-2 pb-4">
             <div className="btn-link font-spacing text-uppercase">
                 <small>
                     <FaIcon icon={faAngleLeft} className="mr-2" />

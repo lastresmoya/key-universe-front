@@ -41,7 +41,9 @@ function ProductPage(props) {
                             <div className="col-sm-8">
                                 <h1>The Witcher 3: Wild Hunt</h1>
                                 <small className="font-weight-light"><i>Windows International Release</i></small>
-                                <UserAvatar/>
+                                <div className="py-2">
+                                    <UserAvatar />
+                                </div>
                                 <Badges size="sm"/>
                             </div>
                             <div className="col-sm-4">

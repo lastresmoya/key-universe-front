@@ -13,9 +13,9 @@ function Purchases (props) {
                 </div>
             </div>
             <div className="row">
-                <GameCard size={4} detail="1 Key"/>
-                <GameCard size={4} detail="3 Key(s)"/>
-                <GameCard size={4} detail="1 Key" />
+                <GameCard type={"purchase"} size={4} detail="1 Key"/>
+                <GameCard type={"purchase"} size={4} detail="3 Key(s)"/>
+                <GameCard type={"purchase"} size={4} detail="1 Key" />
             </div>
         </ProfileMain>
     )
