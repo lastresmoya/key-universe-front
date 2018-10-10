@@ -29,6 +29,7 @@ class NewBankAccount extends Component {
             currentView: `Step${this.state.stepVal + 1}`
         })
     }
+    
     render(){
         const { stepVal, currentView } = this.state;
 
@@ -37,7 +38,7 @@ class NewBankAccount extends Component {
                 <Link to={"/profile/accounts/my-accounts"}>
                     <Breadcrumbs content="Go Back" />
                 </Link>
-                <h4>Add Bank Account</h4>
+                <h4 className="mb-4">Add Bank Account</h4>
                 {/* Steps Rendering */}
                 {{
                     Step1: <AccountStep1 />,
@@ -52,7 +53,7 @@ class NewBankAccount extends Component {
                         <BtnLink content="Cancel" />
                     </Link>
                     {currentView === "Step1" &&
-                        <div onClick={() => this.nextStep()} className="px-4">
+                        <div onClick={() => this.nextStep()}>
                             <BtnPrimary content="Next" />
                         </div>
                     }
