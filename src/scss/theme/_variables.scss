@@ -37,7 +37,7 @@ $blue:    #007bff !default;
 $indigo:  #6610f2 !default;
 $purple:  #6300FF !default;
 $pink:    #D900FF !default;
-$red:     #dc3545 !default;
+$red:     #ED5565 !default;
 $orange:  #fd7e14 !default;
 $yellow:  #ffc107 !default;
 $green:   #1AB394 !default;
@@ -753,7 +753,8 @@ $popover-arrow-outer-color:         fade-in($popover-border-color, .05) !default
 // Badges
 
 $badge-font-size:                   75% !default;
-$badge-font-weight:                 $font-weight-bold !default;
+// $badge-font-weight:                 $font-weight-bold !default;
+$badge-font-weight:                 $font-weight-light !default;
 $badge-padding-y:                   .25em !default;
 $badge-padding-x:                   .4em !default;
 $badge-border-radius:               $border-radius !default;
