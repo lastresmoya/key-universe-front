@@ -7,17 +7,16 @@ function KeysDetail({value,status}) {
         if(status){
             switch (status) {
                 case "In Selling":
-                    return "badge-info";
-                    break;
+                    return "badge-primary";
                 case "Valid":
-                    return "badge-success"
+                    return "badge-success";
                 case "Invalid":
-                    return "badge-danger"
+                    return "badge-danger";
                 default:
                     return "badge-secondary";
             }
         } else {
-            return "badge-secondary"
+            return "badge-secondary";
         }
         
     }

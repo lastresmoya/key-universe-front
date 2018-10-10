@@ -30,7 +30,7 @@ function ProfileNav(props) {
                 </ul> */}
             </li>
             <li className="nav-item">
-                <a className="nav-link"><FaIcon icon={faCreditCard} /> BANK ACCOUNT</a>
+                <NavLink to={'/profile/accounts/my-accounts'} activeClassName="active" className="nav-link"><FaIcon icon={faCreditCard} /> BANK ACCOUNT</NavLink>
             </li>
         </ul>
     );

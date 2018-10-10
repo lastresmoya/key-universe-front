@@ -12,11 +12,17 @@ import {
 import HomePage from "./pages/HomePage";
 
 import ProfileGeneral from "./pages/Profile/General";
+
+// Purchases
 import Purchases from "./pages/Profile/Purchases";
 import PurchaseDetail from "./pages/Profile/Purchases/PurchaseDetail";
+// Offers
 import MyOffers from "./pages/Profile/Offers";
 import NewOffer from "./pages/Profile/Offers/NewOffer";
 import OfferDetail from "./pages/Profile/Offers/OfferDetail";
+// Bank Accounts
+import BankAccounts from "./pages/Profile/BankAccounts";
+import NewBankAccount from "./pages/Profile/BankAccounts/NewBankAccount";
 
 import PublicProfile from "./pages/Profile/PublicProfile";
 import SearchPage from "./pages/SearchPage";
@@ -56,6 +62,8 @@ class AppContainer extends Component {
                     <Route path='/profile/offers/my-offers' component={MyOffers} />
                     <Route path='/profile/offers/new' component={NewOffer} />
                     <Route path='/profile/offer/:id' component={OfferDetail} />
+                    <Route path='/profile/accounts/my-accounts' component={BankAccounts} />
+                    <Route path='/profile/accounts/new' component={NewBankAccount} />
                     <Route path='/public-profile' component={PublicProfile} />
                     <Route path='/search' component={SearchPage} />
                     <Route path='/product' component={ProductPage} />
