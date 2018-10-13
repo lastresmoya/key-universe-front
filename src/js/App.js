@@ -30,6 +30,9 @@ import ProductPage from "./pages/ProductPage";
 import Checkout from "./pages/Checkout";
 import CheckoutForm from "./pages/Checkout/CheckoutForm";
 import CheckoutSuccess from "./pages/Checkout/CheckoutSuccess";
+// 
+import TermsConditions from "./pages/TermsConditions";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 import MainNav from './components/MainNav';
 import Footer from './components/Footer';
@@ -70,6 +73,10 @@ class AppContainer extends Component {
                     <Route path='/checkout/cart' component={Checkout} />
                     <Route path='/checkout/form' component={CheckoutForm} />
                     <Route path='/checkout/success' component={CheckoutSuccess} />
+
+                    <Route path='/terms-and-conditions' component={TermsConditions} />
+                    <Route path='/privacy-policy' component={PrivacyPolicy} />
+
                     <Footer/>
                     {/* <Route path="/clinician" render={() => <Dashboard {...{ currentDash: 'clinician' }} />} />
                     <Route path="/doctor" render={() => <Dashboard {...{ currentDash: 'doctor' }} />} /> */}

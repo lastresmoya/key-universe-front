@@ -33,8 +33,12 @@ function Footer (props) {
                     <div className="col">
                         <ul className="list-unstyled">
                             <li className="font-spacing mb-2">LEGAL</li>
-                            <li className="text-muted py-1"><small>Terms of Service</small></li>
-                            <li className="text-muted py-1"><small>Privacy Policy</small></li>
+                            <li>
+                                <Link to={"/terms-and-conditions"} className="text-muted py-1"><small>Terms of Service</small></Link>
+                            </li>
+                            <li>
+                                <Link to={"/privacy-policy"} className="text-muted py-1"><small>Privacy privacy</small></Link>
+                            </li>
                             <li className="text-muted py-1"><small>Returns Policy</small></li>
                         </ul>
                     </div>
