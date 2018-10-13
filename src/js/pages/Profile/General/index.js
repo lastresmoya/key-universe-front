@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Badges from '../../../components/Badges';
 import DescriptionItem from '../../../components/DescriptionItem';
 import AvatarImg from '../../../components/Avatars/AvatarImg';
@@ -36,8 +37,12 @@ function General (props) {
             </div>
             <h4 className="font-spacing font-weight-normal mt-4 mb-3">ACTIONS</h4>
             <p className="font-weight-bold">
-                <span className="mr-4"><FaIcon icon={faUsers} /> PUBLIC PROFILE</span>
-                <span className="mr-4"><FaIcon icon={faLock} /> CHANGE PASSWORD</span>
+                <Link to={"/public-profile"} className="btn-link text-white">
+                    <span className="mr-4"><FaIcon icon={faUsers} /> PUBLIC PROFILE</span>
+                </Link>
+                <Link to={"/profile/change-password"} className="btn-link text-white">
+                    <span className="mr-4"><FaIcon icon={faLock} /> CHANGE PASSWORD</span>
+                </Link>
             </p>
             <p className="font-weight-bold">
                 <span className="mr-4"><FaIcon icon={faEnvelope} /> CHANGE EMAIL</span>

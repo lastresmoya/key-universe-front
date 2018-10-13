@@ -11,7 +11,6 @@ import {
 
 import HomePage from "./pages/HomePage";
 
-import ProfileGeneral from "./pages/Profile/General";
 
 // Purchases
 import Purchases from "./pages/Profile/Purchases";
@@ -24,6 +23,9 @@ import OfferDetail from "./pages/Profile/Offers/OfferDetail";
 import BankAccounts from "./pages/Profile/BankAccounts";
 import NewBankAccount from "./pages/Profile/BankAccounts/NewBankAccount";
 
+// Profile
+import ProfileGeneral from "./pages/Profile/General";
+import ProfilePassword from "./pages/Profile/Password";
 import PublicProfile from "./pages/Profile/PublicProfile";
 import SearchPage from "./pages/SearchPage";
 import ProductPage from "./pages/ProductPage";
@@ -61,7 +63,10 @@ class AppContainer extends Component {
                     <MainNav/>
                     <Route component={ScrollToTop} />
                     <Route exact path='/' component={HomePage} />
+                    {/* Profile */}
                     <Route path='/profile/general' component={ProfileGeneral} />
+                    <Route path='/public-profile' component={PublicProfile} />
+                    <Route path='/profile/change-password' component={ProfilePassword} />
                     <Route path='/profile/purchases/my-purchases' component={Purchases} />
                     <Route path='/profile/purchase/:id' component={PurchaseDetail} />
                     <Route path='/profile/offers/my-offers' component={MyOffers} />
@@ -69,7 +74,7 @@ class AppContainer extends Component {
                     <Route path='/profile/offer/:id' component={OfferDetail} />
                     <Route path='/profile/accounts/my-accounts' component={BankAccounts} />
                     <Route path='/profile/accounts/new' component={NewBankAccount} />
-                    <Route path='/public-profile' component={PublicProfile} />
+
                     <Route path='/search' component={SearchPage} />
                     <Route path='/product' component={ProductPage} />
                     <Route path='/checkout/cart' component={Checkout} />
