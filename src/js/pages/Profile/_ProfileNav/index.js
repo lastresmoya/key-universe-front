@@ -8,6 +8,9 @@ import {
     faTags,
     faCreditCard
 } from '@fortawesome/fontawesome-free-solid';
+import {
+    faMoneyBillAlt
+} from '@fortawesome/fontawesome-free-regular';
 
 function ProfileNav(props) {
     return (
@@ -31,6 +34,9 @@ function ProfileNav(props) {
             </li>
             <li className="nav-item">
                 <NavLink to={'/profile/accounts/my-accounts'} activeClassName="active" className="nav-link"><FaIcon icon={faCreditCard} /> BANK ACCOUNT</NavLink>
+            </li>
+            <li className="nav-item">
+                <NavLink to={'/profile/wallet'} activeClassName="active" className="nav-link"><FaIcon icon={faMoneyBillAlt} /> MY WALLET</NavLink>
             </li>
         </ul>
     );

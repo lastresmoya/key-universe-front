@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import logo from './assets/logo-keyuniverse.png';
+import SignRegister from '../SignRegister';
+import ModalDefault from '../Modals/ModalDefault';
 import { Link } from 'react-router-dom';
 import FaIcon from '@fortawesome/react-fontawesome';
 import { 
@@ -10,12 +12,13 @@ import {
 
 
 class MainNav extends Component {
-    // _handleKeyPress = (e) => {
-    //     if (e.key === 'Enter') {
-    //         console.log('do validate');
-    //     }
-    // }
     render(){
+        const modalSignRegister = {
+            id: "sign-register",
+            title: " ",
+            type: "default",
+            content: <SignRegister />,
+        }
         return (
             <nav className="navbar navbar-expand-lg navbar-dark bg-gradient-secondary d-flex justify-content-center">
                 <div className="col-3">
@@ -48,9 +51,15 @@ class MainNav extends Component {
                     </li>
                 </ul>
                 <div className="navbar-nav col-3 d-flex justify-content-sm-end">
-                    <li className="nav-item">
+                    {/* <li className="nav-item">
                         <Link to={"/profile/general"} className="nav-link text-primary">SIGN IN</Link>
+                    </li> */}
+                    <li className="nav-item">
+                        <div data-toggle="modal" data-target={`#${modalSignRegister.id}Modal`} className="nav-link text-primary">
+                            SIGN IN
+                        </div>
                     </li>
+                    
                     <li className="nav-item">
                         <Link to={'/checkout/cart'} className="nav-link">
                             <span className="h6"><FaIcon icon={faShoppingCart} /></span>
@@ -62,6 +71,14 @@ class MainNav extends Component {
                     <input className="form-control mr-sm-2" type="search" placeholder="Search"/>
                     <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                 </form> */}
+                <ModalDefault
+                    type={modalSignRegister.type}
+                    id={modalSignRegister.id}
+                    title={modalSignRegister.title}
+                    content={modalSignRegister.content}
+                    dark
+                    option
+                />
             </nav>
         )
     }

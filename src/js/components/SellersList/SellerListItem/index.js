@@ -1,6 +1,6 @@
 import React from 'react';
 import Badges from '../../../components/Badges';
-import avatarImg from './assets/avatar-mini.png';
+import avatarImg from '../../Avatars/AvatarImg/assets/avatar-xs.png';
 import FaIcon from '@fortawesome/react-fontawesome';
 import {
     faGem

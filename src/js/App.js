@@ -10,7 +10,7 @@ import {
 } from './redux';
 
 import HomePage from "./pages/HomePage";
-
+import LoginPage from "./pages/LoginPage";
 
 // Purchases
 import Purchases from "./pages/Profile/Purchases";
@@ -32,6 +32,8 @@ import ProductPage from "./pages/ProductPage";
 import Checkout from "./pages/Checkout";
 import CheckoutForm from "./pages/Checkout/CheckoutForm";
 import CheckoutSuccess from "./pages/Checkout/CheckoutSuccess";
+import ProfileWallet from "./pages/Profile/Wallet";
+
 // Support Tickets
 import Support from "./pages/Profile/Support";
 // 
@@ -74,8 +76,11 @@ class AppContainer extends Component {
                     <Route path='/profile/offer/:id' component={OfferDetail} />
                     <Route path='/profile/accounts/my-accounts' component={BankAccounts} />
                     <Route path='/profile/accounts/new' component={NewBankAccount} />
+                    <Route path='/profile/wallet' component={ProfileWallet} />
 
                     <Route path='/search' component={SearchPage} />
+                    <Route path='/login' component={LoginPage} />
+
                     <Route path='/product' component={ProductPage} />
                     <Route path='/checkout/cart' component={Checkout} />
                     <Route path='/checkout/form' component={CheckoutForm} />
