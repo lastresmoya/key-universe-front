@@ -5,7 +5,7 @@ function LoginPage(props) {
     return (
         <div>
             <div className="container">
-                <div className="row py-5 my-5">
+                <div className="row py-5 mt-4">
                     <div className="col-sm-5 m-auto">
                         <SignRegister />
                     </div>
