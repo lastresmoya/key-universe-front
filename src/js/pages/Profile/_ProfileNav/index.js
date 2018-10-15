@@ -19,7 +19,7 @@ function ProfileNav(props) {
                 <NavLink to={'/profile/general'} activeClassName="active" className="nav-link"><FaIcon icon={faUser} /> PROFILE</NavLink>
             </li>
             <li className="nav-item">
-                <a className=" nav-link" href="#"><FaIcon icon={faBriefcase} /> BUSINESS PROFILE</a>
+                <NavLink to={'/public-profile'} activeClassName="active" className="nav-link"><FaIcon icon={faBriefcase} /> BUSINESS PROFILE</NavLink>
             </li>
             <li className="nav-item">
                 <NavLink to={'/profile/purchases/my-purchases'} activeClassName="active" className="nav-link"><FaIcon icon={faCloud} /> MY PURCHASES</NavLink>

@@ -2,11 +2,13 @@ import React, { Component } from 'react';
 import logo from './assets/logo-keyuniverse.png';
 import SignRegister from '../SignRegister';
 import ModalDefault from '../Modals/ModalDefault';
+import NotificationDropdown from './NotificationDropdown';
 import { Link } from 'react-router-dom';
 import FaIcon from '@fortawesome/react-fontawesome';
 import { 
     faShoppingCart,
-    faSearch
+    faSearch,
+    faBell
  } from '@fortawesome/fontawesome-free-solid';
 
 
@@ -47,7 +49,7 @@ class MainNav extends Component {
                         <Link to={"/search"} className="nav-link">
                             <span className="h6 mb-0 mr-2"><FaIcon icon={faSearch} /></span>
                             SEARCH
-                    </Link>
+                        </Link>
                     </li>
                 </ul>
                 <div className="navbar-nav col-3 d-flex justify-content-sm-end">
@@ -59,7 +61,7 @@ class MainNav extends Component {
                             SIGN IN
                         </div>
                     </li>
-                    
+                    <NotificationDropdown/>
                     <li className="nav-item">
                         <Link to={'/checkout/cart'} className="nav-link">
                             <span className="h6"><FaIcon icon={faShoppingCart} /></span>
