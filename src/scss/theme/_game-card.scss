@@ -2,9 +2,11 @@
     @extend .mb-5;
     display: block;
 
+
     .game-card-top {
         position: relative;
         width: 100%;
+        @extend .mb-2;
         &:after {
             content: "";
             display: block;
@@ -109,5 +111,24 @@
         color: $white;
     }
 
+    &.jumbo-card {
+        // @extend .d-flex;
+        width: 100%;
+        margin-bottom: 0!important;
+        .game-card-top {
+            @extend .mb-0;
+            &:after {
+                content: "";
+                display: block;
+                padding-bottom: 60%;
+            }
+            .game-card-img {
+                .lower {
+                    @extend .px-5;
+                    @extend .pb-4;
+                }
+            }
+        }
+    }
     
 }

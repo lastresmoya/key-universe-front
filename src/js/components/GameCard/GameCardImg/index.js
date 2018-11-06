@@ -10,7 +10,7 @@ import {
 
 function GameCard(props) {
     return (
-        <div className="game-card-top mb-2" >
+        <div className="game-card-top" >
             <div className="game-card-img">
                 <div className="upper d-flex align-items-center justify-content-end">
                     <span className="badge badge-pill badge-light mr-2"><FaIcon icon={faApple} /></span>
