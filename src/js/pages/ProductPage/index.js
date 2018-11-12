@@ -1,9 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { apiService, productInfoService } from '../../services';
-import axios from 'axios';
-import constants from '../../utils/constants';
-
+import { productInfoService } from '../../services';
 
 import thumbLg from './assets/thumb-lg.png';
 import thumby1 from './assets/thumb-sm-1.png';
