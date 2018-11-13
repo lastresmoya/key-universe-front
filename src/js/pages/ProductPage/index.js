@@ -44,9 +44,8 @@ class ProductPage extends React.Component {
     
     render() {
         const product = this.state.productData;
-        console.log(product);
         return (
-            <div>
+            <div className="product=page">
                 {product &&
                     <div className="container">
                         <Link to={'/'} >
