@@ -97,9 +97,9 @@ class ProductPage extends React.Component {
                         </div>
                         <div className="row mt-5">
                             <div className="col-sm-5">
-                                <ProductFeatures />
-                                <ProductDetails details={product} />
-                                <SystemRequirements requirements={product} />
+                                <ProductFeatures features={product.features}/>
+                                <ProductDetails details={product.details} />
+                                <SystemRequirements requirements={product.requirements} />
                             </div>
                             <div className="col-sm-7">
                                 <h4 className="font-spacing font-weight-normal">CURRENT SELLERS</h4>
