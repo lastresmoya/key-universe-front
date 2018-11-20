@@ -3,6 +3,7 @@ import SellerListItem from './SellerListItem';
 import Pagination from '../Navigation/Pagination';
 
 function SellerList(props) {
+    const currentSellers = props.currentSellers;
     return (
         <div>
             <table className="table table-hover">
@@ -16,18 +17,25 @@ function SellerList(props) {
                     </tr>
                 </thead>
                 <tbody>
-                    <SellerListItem />
-                    <SellerListItem />
-                    <SellerListItem />
-                    <SellerListItem />
-                    <SellerListItem />
-                    <SellerListItem />
-                    <SellerListItem />
-                    <SellerListItem />
-                    <SellerListItem />
+                    {currentSellers.map(seller => {
+                            return (
+                                <SellerListItem
+                                    key={seller.id}
+                                    image={seller.profile_pic}
+                                    name={seller.username}
+                                    level={seller.user_level}
+                                    soldKeys={seller.user_sold_keys}
+                                    price={seller.price}
+                                />
+                            )
+                        }) 
+                    }
                 </tbody>
             </table>
-            <Pagination/>
+            { currentSellers && currentSellers.length >= 9 &&
+                <Pagination/>
+            }
+            
         </div>
     )
 }

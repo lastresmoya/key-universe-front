@@ -23,9 +23,11 @@ class ProductPage extends React.Component {
     constructor(props) {
 		super(props);
 		this.state = {
-            productData: null
+            productData: null,
+            currentSellers: null
         };
         this.getProductData = this.getProductData.bind(this);
+        this.getProductCurrentSellers = this.getProductCurrentSellers.bind(this);
     }
 
     getProductData(id) {
@@ -38,12 +40,25 @@ class ProductPage extends React.Component {
             });
     }
 
+    getProductCurrentSellers(id) {
+        productInfoService.getCurrentSellers(id)
+            .then(res => {
+                this.setState({ currentSellers: res.data.offers})
+            })
+            .catch(err => {
+                console.log(err);
+            });
+    }
+
     componentWillMount() {
        this.getProductData(3);
+       this.getProductCurrentSellers(3);
     }
     
     render() {
         const product = this.state.productData;
+        const currentSellers = this.state.currentSellers;
+
         return (
             <div className="product-page">
                 {product &&
@@ -98,17 +113,19 @@ class ProductPage extends React.Component {
                         <div className="row mt-5">
                             <div className="col-sm-5">
                                 <ProductFeatures features={product.features}/>
-                                <ProductDetails details={product.details} />
+                                <ProductDetails details={product.details}/>
                                 <SystemRequirements requirements={product.requirements} />
                             </div>
                             <div className="col-sm-7">
                                 <h4 className="font-spacing font-weight-normal">CURRENT SELLERS</h4>
                                 <p>Look who sells <strong>The Witcher3: Wild Hunt</strong> now</p>
-                                <SellersList />
+                                <SellersList currentSellers={currentSellers} />
                             </div>
                         </div>
                     </div>
-                }                
+                }
+
+                {/* {this.state.currentSellers && <SellersList sellers={this.state.currentSellers}/> } */}
         </div >
         )
     }

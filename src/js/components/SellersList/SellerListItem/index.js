@@ -6,23 +6,30 @@ import {
     faGem
 } from '@fortawesome/fontawesome-free-solid';
 
-
 function SellerListItem(props) {
+    const level = props.level;
+    let levelIcons = [],
+        i;
+
+    for(i = 0; i < level; i = i + 1) {
+        levelIcons.push(
+            <FaIcon icon={faGem} className="mr-1" key={i}/>
+        );
+    };
+
     return (
         <tr data-aos="fade-up">
             <th scope="row">
-                <img src={avatarImg} alt="" className="mr-2"/>Dale
+                <img src={props.image} alt="" className="mr-2"/>{props.name}
             </th>
             <td className="text-info">
-                <FaIcon icon={faGem} className="mr-1"/>
-                <FaIcon icon={faGem} className="mr-1"/>
-                <FaIcon icon={faGem} />
+                {levelIcons}
             </td>
-            <td>59</td>
+            <td>{props.soldKeys}</td>
             <td><Badges size="sm"/></td>
             <td>
                 <span className="h5 m-0">
-                    <span className="badge badge-light p-1">€30.00</span>
+                    <span className="badge badge-light p-1">€{props.price}</span>
                 </span>
             </td>
         </tr>

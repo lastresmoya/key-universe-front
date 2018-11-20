@@ -8,5 +8,11 @@ export default function(apiService) {
             route: apiConstant.host + apiConstant.game + '?id=' + id
         });
 
+	self.getCurrentSellers = (id) =>
+        apiService.get({
+            route: apiConstant.host + apiConstant.currentSellers + id
+        });
 	return self;
+
+	
 }

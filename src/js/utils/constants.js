@@ -1,7 +1,8 @@
 const keyUniverseConstants = {
 	api: {
 		host: 'http://app.keyuniverse.com/',
-		game: 'game'
+		game: 'game',
+		currentSellers: 'offers?game_id=' 
 	}
 };
 

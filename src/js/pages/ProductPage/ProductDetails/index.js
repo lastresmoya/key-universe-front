@@ -2,6 +2,9 @@ import React from 'react';
 
 function ProductDetails (props) {
     const game = props.details;
+    // const sellers = props.sellers;
+    // console.log('here!!!! ' + sellers);
+
     return (
         <section className="mb-5">
             <p className="lead">GAME DETAILS</p>
