@@ -2,7 +2,6 @@ import React from 'react';
 
 function ProductFeatures (props) {
     const features = props.features;
-    console.log(features)
     return(
         <section className="mb-5">
             <ul className="list-unstyled">

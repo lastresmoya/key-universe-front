@@ -92,7 +92,7 @@ class ProductPage extends React.Component {
                                     </div>
                                     <div className="col-sm-4">
                                         <p className="h1">€{product.main_price}</p>
-                                        <small>Includes donation for developers studio <strong>€3.00</strong></small>
+                                        <small>Includes donation for developers studio <strong>{'€' + product.main_price_donation}</strong></small>
                                         <div className="mb-3 mt-4">
                                             <span className="font-weight-bold">AVAILABLE KEYS</span>
                                             <Counter />
