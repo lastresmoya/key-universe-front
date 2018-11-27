@@ -7,7 +7,9 @@ import {
 } from '@fortawesome/fontawesome-free-solid';
 
 function SellerListItem(props) {
-    const level = props.level;
+    const seller = props.sellerInfo;
+    const level = seller.user_level;
+
     let levelIcons = [],
         i;
 
@@ -20,16 +22,21 @@ function SellerListItem(props) {
     return (
         <tr data-aos="fade-up">
             <th scope="row">
-                <img src={props.image} alt="" className="mr-2"/>{props.name}
+                <img src={seller.profile_pic} alt="" className="mr-2"/>{seller.username}
+                {seller.donation &&
+                    <small className="ml-2 d-block">{seller.username + ' is giving away ' + seller.donation_percent +'% to charity with this sale!'}</small>
+                }
             </th>
             <td className="text-info">
                 {levelIcons}
             </td>
-            <td>{props.soldKeys}</td>
-            <td><Badges size="sm"/></td>
+            <td>{seller.user_sold_keys}</td>
+            <td>
+                <Badges size="sm" badges={seller.badges}/>
+            </td>
             <td>
                 <span className="h5 m-0">
-                    <span className="badge badge-light p-1">€{props.price}</span>
+                    <span className="badge badge-light p-1">€{seller.price}</span>
                 </span>
             </td>
         </tr>

@@ -4,6 +4,7 @@ import Pagination from '../Navigation/Pagination';
 
 function SellerList(props) {
     const currentSellers = props.currentSellers;
+
     return (
         <div>
             <table className="table table-hover">
@@ -20,12 +21,8 @@ function SellerList(props) {
                     {currentSellers.map(seller => {
                             return (
                                 <SellerListItem
+                                    sellerInfo={seller}
                                     key={seller.id}
-                                    image={seller.profile_pic}
-                                    name={seller.username}
-                                    level={seller.user_level}
-                                    soldKeys={seller.user_sold_keys}
-                                    price={seller.price}
                                 />
                             )
                         }) 
