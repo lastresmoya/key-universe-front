@@ -58,7 +58,6 @@ class ProductPage extends React.Component {
     render() {
         const product = this.state.productData;
         const currentSellers = this.state.currentSellers;
-
         return (
             <div className="product-page">
                 {product &&
@@ -86,7 +85,7 @@ class ProductPage extends React.Component {
                                         <h1>{ product.title }</h1>
                                         <small className="font-weight-light"><i>Windows International Release</i></small>
                                         <div className="py-2">
-                                            <UserAvatar />
+                                            <UserAvatar mainUserData={product.main_seller}/>
                                         </div>
                                         <Badges size="sm" />
                                     </div>
