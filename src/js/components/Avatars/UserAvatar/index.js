@@ -8,7 +8,7 @@ import {
 
 
 function UserAvatar(props, { size }) {
-    const user = props.mainUserData;
+    const user = props.mainSellerData;
     let levelIcons = [],
     i;
 

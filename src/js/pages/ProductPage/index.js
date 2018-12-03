@@ -85,7 +85,7 @@ class ProductPage extends React.Component {
                                         <h1>{ product.title }</h1>
                                         <small className="font-weight-light"><i>Windows International Release</i></small>
                                         <div className="py-2">
-                                            <UserAvatar mainUserData={product.main_seller}/>
+                                            <UserAvatar mainSellerData={product.main_seller}/>
                                         </div>
                                         <Badges size="sm" />
                                     </div>
